@@ -1,0 +1,21 @@
+//İsimlendirme
+package main
+
+func main() {
+
+}
+
+// Bir değişken tanımlarken oluşturduğunuz paket içerisinde yani sadece dosya içerisinde kullanacaksanız küçük harf ile oluşturabilirsiniz.
+var name string = "golang"
+
+// Küçük harf ile başlarsanız dışarıdan erişilemez yani private olacaktır. Büyük harf ile başlarsanız public olacaktır.
+var Version string = "1.2.3"
+
+//açıklama alanı olarak kullanılır.
+
+/*
+	burası
+	çoklu
+	açıklama
+	alanı
+*/
