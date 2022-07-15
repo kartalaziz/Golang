@@ -1,0 +1,15 @@
+//Değişkenler ve değişken kullanımı 4
+package main
+
+import "fmt"
+
+func main() {
+
+	//variable'ın kısaltılmış hali olan var ifadesini değişken atamak için kullanıyoruz.
+	var message = "Merhaba ben Go öğrenmeye çalışıyorum. Değişkenler örnek 4 - Tek bir satırda birden çok değişken oluşturma"
+	var a, b, c int = 3, 4, 5
+	fmt.Println(message)
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+}
