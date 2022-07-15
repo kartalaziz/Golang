@@ -1,0 +1,10 @@
+//Değişkenler ve değişken kullanımı 7
+package main
+
+func main() {
+	var myFloat32 float32 = 44.
+	myComplex := complex(3, 4)
+	// complex veri tipi
+	println(myFloat32)
+	println(myComplex)
+}
