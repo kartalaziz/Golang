@@ -1,0 +1,11 @@
+//Değişkenler ve değişken kullanımı 8
+package main
+
+var sayi = 4
+//Yukarıdaki şekilde bir değişken tanımlaması yapmak mümkündür. Buna global değişken tanımlaması denir.
+
+sayi := 4
+//Yukarıdaki şekilde bir değişken tanımlayamazsınız. Global değişkenlerde var ifadesi mutlaka olmalıdır.
+func main() {
+	
+}
