@@ -1,0 +1,13 @@
+//Değişkenler ve değişken kullanımı
+package main
+
+import "fmt"
+
+func main() {
+
+	//variable'ın kısaltılmış hali olan var ifadesini değişken atamak için kullanıyoruz.
+	var message string
+	message = "Merhaba ben Go öğrenmeye çalışıyorum."
+
+	fmt.Println(message)
+}
