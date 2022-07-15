@@ -1,0 +1,12 @@
+//Değişkenler ve değişken kullanımı 5
+package main
+
+import "fmt"
+
+func main() {
+	// aynı satırda farklı türde değişkenler
+	var message = "Merhaba guys"
+	var a, b, c = 3, true, 4.5
+
+	fmt.Println(message, a, b, c)
+}
