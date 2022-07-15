@@ -1,0 +1,15 @@
+//Değişkenler ve değişken kullanımı 10
+package main
+
+//Tüm değişkenleri var() içinde yazarak daha derli toplu bir kod yazmak mümkündür.
+var (
+	degisken1 = "asdadsdas"
+	değisken2 = "zaaazazaa"
+	degisken3 = 14
+)
+
+func main() {
+
+	println(degisken1)
+
+}
