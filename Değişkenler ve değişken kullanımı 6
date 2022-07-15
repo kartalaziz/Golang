@@ -1,0 +1,10 @@
+//Değişkenler ve değişken kullanımı 6
+package main
+
+import "fmt"
+
+func main() {
+	// En kısa yöntem ile değişken tanımlama
+	u := 55
+	fmt.Println(u)
+}
