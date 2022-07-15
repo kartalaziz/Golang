@@ -1,0 +1,14 @@
+//Değişkenler ve değişken kullanımı 9
+package main
+
+import "fmt"
+
+//constant yani sabit değişkenleri tanımlama
+const aciklama = "Go uygulaması"
+const pi = 3.14
+
+func main() {
+
+	fmt.Println(pi, aciklama)
+
+}
