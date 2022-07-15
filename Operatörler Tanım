@@ -1,0 +1,51 @@
+//Operatörler
+//Operatörler bize matematiksel ya da ilişkisel farklı veri tipleri ve nesneler arasında işlemler yapmamızı sağlayan simgelerdir.
+
+/*
+Aritmetik Operatörler:
++
+-
+*
+/
+%
+++
+--
+*/
+
+
+/*
+İlişkisel Operatörler
+==   -> İki operatör olsun A ve B bu operatörler eşit ise koşul gerçekleşir. Değil ise gerçekleşmez.
+!=   -> İki operatörün eşit olup olmadığını sorgular. Değerler eşit değilse true dönüt verir.
+>
+<
+>=
+<=
+
+*/
+
+/*
+Mantıksal Operatörler
+&& mantıksal and(ve)
+|| mantıksal or(veya)
+!  mantıksal not 
+
+*/
+
+/*
+Atama Operatörleri
+=
++=
+-=
+*=
+/=
+%=
+<<=
+>>=
+&=
+!=
+=!
+
+*/
+
+
