@@ -1,0 +1,14 @@
+//Constant(Sabitler)
+//const anahtar kelimesiyle tanımlanırlar
+
+package main
+
+import "fmt"
+
+const thy = "Turkish Airlines"
+const tai = "TAI"
+
+func main() {
+
+	fmt.Println(thy, tai)
+}
