@@ -1,0 +1,28 @@
+// Tür Dönüşümleri
+
+/*
+T(v) ifadesi v değerini T türüne dönüştürmek için kullanılır.
+Örnekle gösterecek olursak:
+var f float64 = float64(i)
+veya daha kolay şekilde gösterelim
+u := uint(f)
+*/
+
+package main
+
+import (
+	"fmt"
+	"strconv"
+)
+
+func main() {
+
+	var myString = "1"
+	var x = 10
+	var f float32 = 2.0
+
+	fmt.Println(myString, x, f)
+	//string'ten int'e dönüştürme
+	number, _ := strconv.Atoi(myString)
+	fmt.Println(number)
+}
