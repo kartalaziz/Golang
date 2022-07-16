@@ -1,0 +1,35 @@
+/* Boş tanımlayıcı (_)
+ Go programlama dili içerisinde birden fazla değer dönen fonksiyonlar vardır.
+Tüm fonksiyonlar içeride dönebilecek hatalarda size dönebilecek şekilde tasarlanmıştır.
+Bir nesneyi kullanmayacaksak _ kullanırız. Derleme sırasında hata vermemesi için boş tanımlayıcı kullanılır.
+*/
+
+/*
+//En basit şekilde kullanım
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var _ string = "selamın aleyküm"
+
+	fmt.Println()
+
+}
+*/
+
+
+/*
+//Diğer kullanım örneği
+package main
+
+import "fmt"
+
+func main(){
+
+var _,x,_ int = 0,9,0
+fmt.Println(x)
+}
+*/
