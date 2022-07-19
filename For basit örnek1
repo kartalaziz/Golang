@@ -1,0 +1,14 @@
+//Döngüler
+//For
+// Döngü yapılarında en sık For kullanılır (Go dilinde)
+
+package main
+
+import "fmt"
+
+func main() {
+
+	for i := 0; i <= 5; i++ {
+		fmt.Println("Değer: ", i)
+	}
+}
