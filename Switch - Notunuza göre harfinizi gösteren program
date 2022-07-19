@@ -1,0 +1,27 @@
+//Switch - Notunuza göre harfinizi gösteren program
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var not float64
+	fmt.Println("Son sınav notunuzu giriniz:")
+	fmt.Scanf("%v", &not)
+
+	switch {
+	case not <= 40:
+		fmt.Println("F aldınız")
+	case not <= 50:
+		fmt.Println("D aldınız")
+	case not <= 70:
+		fmt.Println("C aldınız")
+	case not <= 80:
+		fmt.Println("B aldınız")
+	case not <= 100:
+		fmt.Println("A aldınız")
+	default:
+		fmt.Println("Lütfen geçerli bir değer giriniz")
+	}
+}
