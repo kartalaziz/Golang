@@ -1,0 +1,81 @@
+// Console uygulamalarında veri çıkışı (Ekrana bir şey yazdırma)
+/*
+Go programlama dilinde 3 farklı çıktı fonksiyonu bulunur.​
+Print()​
+Println()​
+Printf()
+
+ Yeni bir satırda argümanları devam ettirmek istiyorsak \n ifadesini kullanırız.
+
+ İki argümanın arasına bir boşluk(space) bırakmak istiyorsak " " ifadesi ile bu boşluğu yaratırız.
+
+Println() fonksiyonu: Print() fonksiyonuna benzer bir işlev görür. Tek farkı iki argüman arasına otomatik olarak boşluk koyar. Yani /n ifadesine gerek yoktur.
+
+Printf() fonksiyonu, argümanı verilen biçimlendirme fiiline göre biçimlendirir ve ardından bunları yazdırır.
+Burada iki biçimlendirme fiili kullanacağız:
+
+%v, argümanların değerini yazdırmak için kullanılır.
+%T, argümanların türünü yazdırmak için kullanılır.
+Örnek:
+*/
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var i string = "Merhaba"
+	var j int = 15
+
+	fmt.Printf("i has value: %v and type: %T\n", i, i)
+	fmt.Printf("j has value: %v and type: %T", j, j)
+}
+
+//Format Fiileri
+/*
+Genel Format Fiilleri
+%v​ Değeri varsayılan formatta tanımlar ve yazdırır.​
+%#v​ Değeri Go programlama dilinin syntax'ında tanımlar ve ekrana yazdırır.​
+%T​ Değerin tipini ekrana yazdırır.​
+%%​ % İşaretini ekrana yazdırır.
+*/
+
+/* Int Format Fiilleri
+%b 2 tabanlı
+&d 10 tabanlı
+%+d 10 tabanlı ve her zaman işaret gösterir
+%o 8 tabanlı
+%O 8 tabanlı 00 önderliğinde
+%x 16 tabanlı küçük harflerle
+%X 16 tabanlı büyük harflerle
+%#x 16 tabanlı 0x ile başlayan
+%4d boşluklu ped(genişlik 4, sağa yaslanmış)
+%-4d boşluklu ped(genişlik 4, sola yaslanmış)
+%04d sıfırlı ped(4 genişlik)
+*/
+
+/* String Format Fiilleri
+
+%s​
+Değeri düz dize olarak yazdırır​
+%q​
+Değeri çift tırnaklı bir dize olarak yazdırır​
+%8s​
+Değeri düz dize olarak yazdırır (genişlik 8, sağa yaslanmış)​
+%-8s​
+Değeri düz dize olarak yazdırır (genişlik 8, sola yaslanmış)​
+%x​
+Değeri, bayt değerlerinin onaltılı dökümü olarak yazdırır​
+% x​
+Değeri boşluklarla birlikte onaltılık döküm olarak yazdırır​
+
+Boolean Format Fiilleri​
+%t​
+Boole operatörünün true veya false biçimindeki değeri ​
+*/
+
+/* Float Format Fiilleri
+şimdilik eklemedim
+*/
