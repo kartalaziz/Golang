@@ -1,0 +1,20 @@
+//Range
+
+package main
+
+// for döngüsünün range formu ile bir slice veya map üzerinde dolaşır. Bir slice üzerinde dolaşırken her seferinde iki değer dönülür.
+// İlk indis, ikincisi o indisli elemanın bir kopyası.
+
+// Değer dizisinin indislerini veya o indise karşılık gelen değerleri _ ataması ile atlayabilirsiniz.
+// Yalnızca indisi kullanmak istiyorsanız ",value" kısmını tamamen çıkarınız.
+
+import "fmt"
+
+var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
+
+func main() {
+
+	for i, v := range pow {
+		fmt.Println("2**%d = %\n", i, v)
+	}
+}
