@@ -1,0 +1,55 @@
+// Go programlama dilinde tarih ve saat işlemleri
+//time paketi kullanılır
+
+//Date() metodu ile kendi tarihimizi oluşturabiliyoruz.
+
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+
+	//Date() metodu ile kendi tarih verimizi oluşturuyoruz.
+	t := time.Date(2016, time.November, 10, 20, 0, 0, 0, time.UTC)
+
+	//t adıyla tarih tipinde oluşturulan veriyi string tipinde ekrana yazıyoruz.
+	fmt.Println("Go %s 'de başlatıldı \n", t)
+
+	fmt.Println("------")
+
+	//time.Now() ile şu anın zaman bilgisini alıyoruz.
+	now := time.Now()
+
+	//Elde edilen zaman bilgisini ekrana yazıyoruz.
+	fmt.Println("Şu an zaman %s \n", now)
+
+	fmt.Println("------")
+
+	// İlk başta oluşturduğumuz t adındaki zaman bilgisinden Ay, Gün ve Haftanın Günü bilgilerini ekrana yazdırıyoruz.
+	fmt.Println("Ay :", t.Month())
+	fmt.Println("Gün:", t.Day())
+	fmt.Println("Haftanın günü", t.Weekday())
+
+	fmt.Println("------")
+
+	//Tarihe 1 gün ekle
+	tomorrow := t.AddDate(0, 0, 1)
+	fmt.Printf("Yarın %v, %v, %v, %v \n",
+		tomorrow.Weekday(),
+		tomorrow.Month(),
+		tomorrow.Day(),
+		tomorrow.Year())
+
+	fmt.Println("------")
+
+	longFormat := " Monday, January 2, 2022"
+	fmt.Println("Yarın", tomorrow.Format(longFormat))
+
+	fmt.Println("-------")
+
+	shortFormat := "1/2/06"
+	fmt.Printf("Yarın", tomorrow.Format(shortFormat))
+}
