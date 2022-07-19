@@ -1,0 +1,36 @@
+// Console uygulamalarında veri girişi(Girdi alma)
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
+
+//bufio paketi input output işlemleri için kullanılan bir pakettir.
+
+func main() {
+	//aşağıdaki satırda bufio paketinden yeni bir okuyucu oluşturmasını istiyoruz
+	reader := bufio.NewReader(os.Stdin)
+	//sonrasında print ile ekrana bir metin giriniz yazdırıyoruz ve kullanıcıdan bir veri bekle
+	fmt.Print("Bir metin giriniz")
+	// kullanıcıdan bir veri bekliyoruz. 2 tane değer döner 1 string 2 error biz stringi alıcaz
+	str, _ := reader.ReadString('\n')
+	fmt.Println(str)
+
+	//tekrardan kullanıcıya bir sayı girmesini istedik
+	fmt.Print("Bir sayı giriniz: ")
+	//veri girişi aldık
+	str, _ = reader.ReadString('\n')
+	//float'a dönüştüreceğimiz kısım alttaki kısım , trim kısmı boşlukları temizleyecek, 64 floatın float64'e dönüştürüleceğini belirtmek için kullanıldı
+	f, err := strconv.ParseFloat(strings.TrimSpace(str), 64)
+	//nil diğer dillerdeki null'dır.
+	if err != nil {
+		fmt.Println(err)
+		//hata olmamışsa direkt veriyi göstermek için aşağıdaki ifadeyi kullandık
+	} else {
+		fmt.Println("Sayının değeri", f)
+	}
+}
