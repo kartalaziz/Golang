@@ -1,0 +1,17 @@
+// if
+
+package main
+
+import "fmt"
+
+func main() {
+
+	a := 10
+	b := 10
+
+	if b > a {
+		fmt.Println("Büyüktür")
+	} else {
+		fmt.Println("Küçüktür veya eşittir")
+	}
+}
