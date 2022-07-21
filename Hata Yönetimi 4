@@ -1,0 +1,20 @@
+//Hata Yönetimi
+
+package main
+
+import (
+	"log"
+	"os"
+)
+
+func main() {
+
+	_, err := os.Open("abc.rar")
+	checkError(err)
+}
+func checkError(err error) {
+	if err != nil {
+		log.Fatal("ERROR :", err)
+	}
+
+}
