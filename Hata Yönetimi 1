@@ -1,0 +1,20 @@
+//Hata Yönetimi
+
+package main
+
+import (
+	"fmt"
+	"os"
+)
+
+func main() {
+
+	//Dosya açma işlemlerinde hata meydana gelirse ne olacak.
+	file, err := os.Open("dosyam.txt")
+	//Böyle bir durumda hatayı çözeceğimiz kısım aşağıdaki kısımdır.
+	if err != nil {
+		fmt.Println(err.Error)
+	}
+	fmt.Println(file.Name)
+
+}
