@@ -1,0 +1,24 @@
+//Diziler
+/*
+[n]T türü T türündeki n tane değerden oluşan bir dizidir.
+
+var a[10]int ifadei 10 tamsayıdan oluşan dizi türünde bir a değişkenini bildirir.
+
+Dizinin uzunluğu tür bildiriminin bir parçası olduğundan dizi bir kere tanımlandıktan sonra yeniden boyutlandırılamaz.
+
+5 elemanı bulunan bir dizinin ilk elemanı 0. eleman olarak adlandırılır.
+*/
+
+package main
+
+import "fmt"
+
+func main() {
+
+	//basit bir dizi
+	myArray1 := [3]int{}
+	myArray1[0] = 32
+	myArray1[1] = 23
+	myArray1[2] = 54
+	fmt.Println(myArray1)
+}
